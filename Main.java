@@ -17,9 +17,13 @@ public class Main {
     myBinaryTree.add(65);
     myBinaryTree.add(63);
     myBinaryTree.add(67);
-    
+
     int size = myBinaryTree.getSize();
     System.out.println("size = " + size);
+
+    Integer result = myBinaryTree.searchKey(56);
+    if (result == 1) System.out.println("key was found");
+    else System.out.println("key not found");
   }
 
 }
